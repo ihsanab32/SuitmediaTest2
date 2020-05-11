@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.activities.main.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="1.2"
+        android:tint="@color/orange_gelap"
+        app:srcCompat="@drawable/bg_bright" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen50dp"
+            android:fontFamily="@font/qs_bold"
+            android:text="@string/welcome"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen7dp"
+            android:fontFamily="@font/qs_reguler"
+            android:text="@string/text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen400dp"
+            android:layout_marginTop="@dimen/dimen16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/dimen10dp"
+            app:cardElevation="@dimen/dimen7dp"
+            app:cardUseCompatPadding="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen100dp"
+                    android:layout_height="@dimen/dimen100dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    app:srcCompat="@drawable/img_avatar" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen50dp"
+                    android:layout_marginLeft="@dimen/dimen5dp"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:layout_marginRight="@dimen/dimen5dp"
+                    android:layout_marginBottom="@dimen/dimen10dp"
+                    android:fontFamily="@font/qs_reguler"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/input_text_disini"
+                    android:inputType="textCapWords"
+                    app:libIZO_clearIconTint="@color/black"
+                    app:libIZO_setBorderColor="@color/colorPrimary"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="@dimen/dimen20dp"
+                    app:libIZO_setPrefixTextColor="@color/colorAccent"
+                    app:libIZO_setStrokeWidth="@dimen/dimen1dp"
+                    tools:ignore="RtlHardcoded" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/et_palindrome"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen50dp"
+                    android:layout_marginLeft="@dimen/dimen5dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginRight="@dimen/dimen5dp"
+                    android:layout_marginBottom="@dimen/dimen10dp"
+                    android:fontFamily="@font/qs_reguler"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/palindrome"
+                    android:inputType="text"
+                    app:libIZO_clearIconTint="@color/black"
+                    app:libIZO_setBorderColor="@color/colorPrimary"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="@dimen/dimen20dp"
+                    app:libIZO_setPrefixTextColor="@color/colorAccent"
+                    app:libIZO_setStrokeWidth="@dimen/dimen1dp"
+                    tools:ignore="RtlHardcoded" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_next"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen5dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/bg_login"
+                        android:fontFamily="@font/qs_bold"
+                        android:text="@string/next"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_palindrome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen5dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/bg_login"
+                        android:fontFamily="@font/qs_bold"
+                        android:text="@string/check"
+                        android:textColor="@color/white" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
